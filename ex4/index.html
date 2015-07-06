@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>task4</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/base.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="left-pane" class="floatL">
+    	<div id="temp-left-pane" class="p20 absolute">
+    	 	<div id="top-div" class="mB20"></div>
+        	<div id="middle-div" class="mB20"></div>
+        	<div id="bottom-div">
+				<div id="slider1">
+       		     	<div class="slider-top fs13">
+       		         	<span>Slider 1</span>
+						<div class="cross-container floatR mT3">
+	       		           <div class=" cross mL5" ></div>
+						</div>
+       		        </div>
+       		    </div>
+           	<div id="slider2">
+           		<div class="slider-top fs13">
+	           		<span>Slider 2</span>
+                    	<div class="cross-container floatR mT3">
+	    	        		<div class="cross mL5"></div>
+						</div>
+					</div>
+           	</div>
+        	</div>
+        </div>
+        <div id="chat-div" class="absolute pL15 pR15">
+        		 <div class="chat-options mt5 mR5 floatL">
+                 	<div id="home-icon" class="icons"></div>					
+               </div>
+        		 <div class="chat-options mt5 mR5 floatL">
+                 	<div id="contact-icon" class="icons"></div>					
+               </div>
+        		 <div class="chat-options mt5 mR5 floatL">
+                 	<div id="message-icon" class="icons"></div>					
+               </div>
+        		 <div class="chat-options mt5 mR5 floatL">	
+                 	<div id="notification-icon" class="icons"></div>				
+               </div>
+        		 <div class="chat-options mt5 floatL">
+                 	<div id="search-icon" class="icons"></div>					
+               </div>				
+       	 </div>
+    </div>
+  <div id="right-pane" class="floatL">
+    </div>
+   
+   <div class="popup" id="main-slider1">
+   		<!--<div class="main-slider-top p20">
+			<span>Slider 1</span>
+           <div class="close-button fR mT3">
+           </div>
+       </div>-->
+       <div class="main-slider-content">
+       		<div id="slider1-textbox">
+            	<input type="text" placeholder="Type text here..."/>
+           </div>
+           <div id="slider1-filter-container" class="mT20 autoheight mB20">
+           	<div class="filter m15">
+           		<div class="select-num floatL">
+            			<div id="select-num-content" class="floatL"><p class="mL5">1</p></div>
+            			<div class="down-arrow floatL"></div>
+            		</div>
+					<div class="select-role floatL mL20">
+              		  	<div id="select-role-content" class="floatL"></div>
+            			<div class="down-arrow floatL"></div>
+              		</div>
+              		<div class="select-stats floatL mL20">
+              		  	<div id="select-stats-content" class="floatL"></div>
+			   			<div class="down-arrow floatL"></div>
+              		</div>
+                  <div class="add-filter mL10 mt5 floatL">
+                  	<div class="add-cross-container">
+	    	        		<div class="cross mL5"></div>
+						</div>
+                     	<div class="minus mT8 mL1 dN" onclick="removefilter(this)"></div>
+                  </div>
+                </div>                
+           </div>
+           <div id="submit-options">
+           	<div class="submit-button floatL mL30"><p class="mt5 aligncenter">Save</p></div>
+            	<div class="cancel-button floatL mL30"><p class="mt5"><a href="#">Cancel</a></p></div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="popup" id="main-slider2">
+<!--	<div class="main-slider-top p20">
+			<span>Slider 2</span>
+           <div class="close-button fR">
+           </div>
+       </div>		-->
+       <div class="main-slider-content">
+       		<div id="slider2-textbox">
+            	<input type="text" onkeyup = "keypress(this)" placeholder="Type text here..."/>
+           </div>
+           <div id="color-pallete" class="p10">
+           	<div class="color-div floatL" id="Cff0000"></div>
+           	<div class="color-div floatL" id="Cff3300"></div>
+           	<div class="color-div floatL" id="Ccc6600"></div>
+           	<div class="color-div floatL" id="Cff9900"></div>
+           	<div class="color-div floatL" id="Ccc9900"></div>
+           	<div class="color-div floatL" id="Ccc0066"></div>
+           	<div class="color-div floatL" id="Ccc6699"></div>
+
+           	<div class="color-div floatL" id="Cff9966"></div>
+           	<div class="color-div floatL" id="Cffcc99"></div>
+           	<div class="color-div floatL" id="Cffff99"></div>
+           	<div class="color-div floatL" id="C99ccff"></div>
+           	<div class="color-div floatL" id="Cccffff"></div>
+           	<div class="color-div floatL" id="C33ccff"></div>
+           	<div class="color-div floatL" id="C6666ff"></div>
+            
+           </div>
+           <p class="mB10 mL25 dN" id="preview">Preview</p>
+           <div id="color-text-container" class="mB20">
+	           <div id="color-text" class="dN">
+	           </div>
+			</div>
+           <div id="submit-options">
+           	<div class="submit-button floatL mL30"><p class="mt5 aligncenter">Save</p></div>
+            	<div class="cancel-button floatL mL30"><p class="mt5"><a href="#">Cancel</a></p></div>
+           </div> 
+       </div>
+       
+   </div>
+   
+</div>
+</body>
+</html>
